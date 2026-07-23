@@ -1,28 +1,21 @@
-# ANKER – Stabilisationsachse · iki1uc
+# LICH · Licht-Achse · Erscheinungsstation
 
-## Zweck
-ANKER ist die Stabilisationsachse des iki1uc‑Systems.
-Es hält die Achsen IQ, QI, EVO, UPD, UPG, BIOS und CALC im korrekten Verhältnis.
+LICH ist die Licht- und Erscheinungsachse des NC-Systems.
+Sie erzeugt sichtbare Ausgaben, Lichtphasen und finale Erscheinungsbilder.
 
-## Struktur
-- NAME: ANKER
-- ID: A01
-- Station: S01
-- Dimension: D4
-- Modus: erabel (neutral, operation möglich)
+──────────────────────────────────────────────
+## Achsen
 
-## Rolle
-ANKER stabilisiert, ohne selbst aktiv zu berechnen oder zu steuern.
-Es ist die neutrale Achse zwischen AXI, 6d und API.
+- intensity – Lichtstärke
+- phase – Lichtphase
+- output – Lichtausgabe
 
-## Bindungen
-- AXI
-- 6d
-- 360
-- 100
-- 213 (REAL)
-- API
+──────────────────────────────────────────────
+## Dateien
 
-## Status
-STATE = STABIL  
-READY = 100%
+- LICH.core.js – Hauptengine
+- LICH.anker.js – Stabilisationsachse
+- LICH.pipeline.js – Licht-Pipeline
+- LICH.result.json – Ergebnis-Pool
+- id.html – Licht-ID-Stempel
+- index.html – Licht-Geometrie
